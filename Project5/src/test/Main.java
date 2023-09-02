@@ -1,7 +1,7 @@
-package com;
+package test;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello GitHub world!");
+        System.out.println("Hello GitHub world!");
     }
 }
