@@ -1,9 +1,10 @@
 package HW;
 
-public class Triangle extends Shape {
+public class Triangle implements Shape {
     private double side1;
     private double side2;
     private double side3;
+    private double perimeter;
 
     public Triangle() {
     }
@@ -12,6 +13,7 @@ public class Triangle extends Shape {
         this.side1 = a;
         this.side2 = b;
         this.side3 = c;
+        this.perimeter = this.side1 + this.side2 + this.side3;
     }
 
     public double getSide1() {
@@ -48,6 +50,12 @@ public class Triangle extends Shape {
     }
 
     public void countPerimeter() {
-        System.out.println(this.side1 + this.side2 + this.side3);
+        System.out.println(this.perimeter);
+    }
+
+    @Override
+    public void countSquare() {
+        double triangleSquare = Math.sqrt(this.perimeter*(this.perimeter - this.side1)*(this.perimeter - this.side2)*(this.perimeter - this.side3));
+        System.out.println(triangleSquare);
     }
 }

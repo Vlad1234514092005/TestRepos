@@ -1,6 +1,6 @@
 package HW;
 
-public class Square extends Shape {
+public class Square implements Shape {
     private double length;
     private double width;
 
@@ -36,5 +36,10 @@ public class Square extends Shape {
 
     public void countPerimeter() {
         System.out.println(this.length * 2 + this.width * 2);
+    }
+
+    @Override
+    public void countSquare() {
+        System.out.println(this.length * this.width);
     }
 }

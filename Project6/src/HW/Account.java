@@ -8,7 +8,7 @@ public class Account {
         this.balance = balance;
     }
 
-    public void setBalance(double balance){
+    private void setBalance(double balance){
         if(balance < 0.0){
             return;
         }

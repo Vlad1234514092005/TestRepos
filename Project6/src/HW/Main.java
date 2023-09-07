@@ -2,12 +2,17 @@ package HW;
 
 public class Main {
     public static void main(String[] args) {
-        Triangle triangle = new Triangle(3, 6, 7);
-        Square square = new Square(10, 13);
-        Circle circle = new Circle(10);
+        Shape triangle = new Triangle(3, 6, 7);
+        Shape square = new Square(10, 13);
+        Shape circle = new Circle(10);
+        Account account = new Account(10000);
 
         triangle.countPerimeter();
         square.countPerimeter();
         circle.countPerimeter();
+        System.out.println();
+        triangle.countSquare();
+        square.countSquare();
+        circle.countSquare();
     }
 }

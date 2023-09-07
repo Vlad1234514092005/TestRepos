@@ -1,6 +1,6 @@
 package HW;
 
-public class Circle extends Shape {
+public class Circle implements Shape {
     private double radius;
     private double diameter;
     private double pi = 3.14;
@@ -36,5 +36,11 @@ public class Circle extends Shape {
 
     public void countPerimeter() {
         System.out.println(2.0 * this.pi * this.radius);
+    }
+
+    @Override
+    public void countSquare() {
+        double radInSquare = this.radius * this.radius;
+        System.out.println(this.pi * radInSquare);
     }
 }

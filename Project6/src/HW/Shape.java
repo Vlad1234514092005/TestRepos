@@ -1,8 +1,6 @@
 package HW;
 
-public class Shape {
-    public Shape(){}
-    public void countPerimeter(){
-
-    }
+public interface Shape {
+    void countPerimeter();
+    void countSquare();
 }
